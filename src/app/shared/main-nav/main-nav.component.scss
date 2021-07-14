@@ -1,5 +1,9 @@
+.menu{
+    position: relative;
+}
 .initial{
     background-color: white;
+    transition: all 0.25s !important;
 }
 .link {
     color: gray !important;

@@ -1,4 +1,4 @@
-<div class="container-fluid py-3 home">
+<div class="container-fluid py-5 home">
     <div class="container anima">
         <div class="row py-5">
             <p>Nosso serviço é</p>
@@ -8,24 +8,9 @@
             <p class="texto d">Eficiente</p>
             <p class="texto e">Econômico</p>
         </div>
-        <carousel autoplay="true" autoplayInterval=2000 counter="true" cellsToShow=2>
-            <div class="carousel-cell">
-                <img src="./../../../assets/img/logo.png">
-            </div>
-            <div class="carousel-cell">
-                <img src="./../../../assets/img/logo_colorido.png">
-            </div>
-            <div class="carousel-cell">
-                <img src="./../../../assets/img/logo.png">
-            </div>
-            <div class="carousel-cell">
-                <img src="./../../../assets/img/logo_colorido.png">
-            </div>
-            <div class="carousel-cell">
-                <img src="./../../../assets/img/logo.png">
-            </div>
-            <div class="carousel-cell">
-                <img src="./../../../assets/img/logo_colorido.png">
+        <carousel autoplay="true" autoplayInterval=2000  [cellsToShow]="mobileQuery.matches ? 1 : 2" loop="true" height=400 transitionDuration=600>
+            <div class="carousel-cell" *ngFor="let image of images">
+                <img [src]="image.path">
             </div>
         </carousel>
     </div>

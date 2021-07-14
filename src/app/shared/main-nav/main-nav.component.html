@@ -1,5 +1,5 @@
-<div style="margin-top: 6rem;" class="example-container example-is-mobile">
-    <mat-toolbar class="example-toolbar mat-elevation-z3 initial" fxLayout="row">
+<div style="margin-top: 6rem;" class="example-container example-is-mobile menu">
+    <mat-toolbar class="example-toolbar mat-elevation-z3 initial" fxLayout="row" id="initial">
         <div *ngFor="let rota of rotas" fxHide.xs>
             <a [routerLink]="rota.url" routerLinkActive="active" class="ms-4 me-4 link">
                 {{ rota.text }}
