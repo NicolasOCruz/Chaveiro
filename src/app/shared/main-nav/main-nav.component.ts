@@ -13,10 +13,10 @@ export class MainNavComponent implements OnInit {
   }
   
   public rotas = [
-    { text: 'Como funciona', url: "home"},
-    { text: 'Quem somos', url: "contato"},
-    { text: 'Dúvidas frequentes', url: "relatorio"},
-    { text: 'Loja', url: "loja"}
+    { text: 'Serviços e Preços', url: "home"},
+    { text: 'Dúvidas Frequentes', url: "contato"},
+    { text: 'Fazer pedido', url: "relatorio"},
+    { text: 'Contato', url: "loja"}
   ]
 
 }

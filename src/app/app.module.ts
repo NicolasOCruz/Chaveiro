@@ -14,13 +14,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { BackgroundComponent } from './shared/background/background.component';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { WidgetComponent } from './shared/widget/widget.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     HomeComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    WidgetComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatToolbarModule,
     FlexLayoutModule,
     MatIconModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    MatButtonModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

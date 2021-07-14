@@ -1,0 +1,43 @@
+button, .help {
+    background-color: blue !important;
+}
+.help{
+    height: 10px;
+    width: 13px;
+    position: relative;
+    left: 3.9rem;
+    bottom: 2.3rem;
+}
+.cart {
+    z-index: 12000;
+    bottom: 0;
+    right: 0;
+    animation: pulse 0.8s infinite;
+    -webkit-animation: pulse 0.8s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        bottom: 5%;
+        filter: brightness(100%);
+    }
+    100% {
+        bottom: 0%;
+        filter: brightness(120%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        bottom: 5%;
+        filter: brightness(100%);
+    }
+    100% {
+        bottom: 0%;
+        filter: brightness(120%);
+    }
+}
