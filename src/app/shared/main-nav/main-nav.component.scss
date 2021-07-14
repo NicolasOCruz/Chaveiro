@@ -1,9 +1,23 @@
 .menu{
     position: relative;
+    margin-top: 6rem !important;
 }
+
+@media screen and (max-width: 400px){
+    .menu{
+        margin-top: 4rem !important;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .menu{
+        margin-top: 2.9rem !important;
+    }
+}
+
 .initial{
     background-color: white;
-    transition: all 0.25s !important;
+    transition: transform 0.3s !important;
 }
 .link {
     color: gray !important;

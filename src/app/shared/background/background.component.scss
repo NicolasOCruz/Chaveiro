@@ -1,26 +1,35 @@
 .app {
-    background-color: #ffff66;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    //transition: all 0.05s;
+  background-color: #ffff66;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  transition: all 0.3s;
 }
 
-a{
-    text-decoration: none;
-    color: gray;
+a {
+  text-decoration: none;
+  color: gray;
 }
 
-.pedido{
-  //  animation: go-back 0.7s infinite alternate;
+.pedido {
+  animation: go-back 0.7s infinite alternate;
 }
-
 
 @keyframes go-back {
-    from {
-      transform: translateX(5px) scale(1.1);
-    }
-    to {
-      transform: translateX(10px) scale(1.2);
-    }
+  from {
+    transform: translateX(5px) scale(1.1);
   }
+  to {
+    transform: translateX(10px) scale(1.2);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .texto {
+    left: 0;
+    top: 6rem;
+  }
+  span{
+    font-size: 0.7em;
+  }
+}
