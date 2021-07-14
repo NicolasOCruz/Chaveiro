@@ -17,7 +17,9 @@
 
 .initial{
     background-color: white;
-    transition: transform 0.3s !important;
+    transition: transform 0.5s !important;
+    position: fixed;
+    z-index: 50;
 }
 .link {
     color: gray !important;

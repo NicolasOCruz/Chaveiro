@@ -16,14 +16,14 @@ export class AppComponent {
       document.getElementById("app").style.opacity = "0%";
       document.getElementById("app").style.transform = "translateY(-100px)"
       document.getElementById("initial").style.backgroundColor = "#ffff66";
-      document.getElementById("initial").style.position = "fixed"
+     // document.getElementById("initial").style.position = "fixed"
       document.getElementById("initial").style.transform = "translateY(-100px)"
-      document.getElementById("initial").style.zIndex = "100"
+     /* document.getElementById("initial").style.zIndex = "100"*/
     } else {
       document.getElementById("app").style.opacity = "100%";
       document.getElementById("app").style.transform = "translateY(0px)"
       document.getElementById("initial").style.backgroundColor = "white";
-      document.getElementById("initial").style.position = "static"
+     // document.getElementById("initial").style.position = "static"
       document.getElementById("initial").style.transform = "translateY(0px)"
     }
   }
