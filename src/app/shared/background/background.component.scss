@@ -4,3 +4,22 @@
     z-index: -1;
     top: 0;
 }
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.pedido{
+  //  animation: go-back 0.7s infinite alternate;
+}
+
+
+@keyframes go-back {
+    from {
+      transform: translateX(5px) scale(1.1);
+    }
+    to {
+      transform: translateX(10px) scale(1.2);
+    }
+  }

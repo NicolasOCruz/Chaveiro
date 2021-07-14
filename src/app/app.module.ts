@@ -13,6 +13,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { BackgroundComponent } from './shared/background/background.component';
 
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { BackgroundComponent } from './shared/background/background.component';
     MatSliderModule,
     MatToolbarModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

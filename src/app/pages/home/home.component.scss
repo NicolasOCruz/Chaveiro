@@ -1,4 +1,41 @@
-/*.home{
-    background: rgba(244, 244, 242, 1) !important;
+.home{
+    overflow: hidden;
+}
+.anima{
+    position: relative;
+    font-size: 2rem;
+    background: white !important;
+}
+.texto {
+    font-size: 2rem;    
+    opacity: 0;
+    animation: fader 10s infinite;
+    position: absolute;
+    left: 15rem;
+    color: blue;
+}
 
-}*/
+.a {
+    animation-delay: 0s;    
+}
+.b {
+    animation-delay: 2s;
+}
+.c {
+    animation-delay: 4s;
+}
+.d {
+    animation-delay: 6s;
+}
+.e {
+    animation-delay: 8s;
+}
+
+@keyframes fader {
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+}
