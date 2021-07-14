@@ -1,0 +1,13 @@
+.initial{
+    background-color: white;
+}
+.link {
+    color: gray !important;
+    font-size: 15px !important;
+    text-decoration: none;
+    transition: all 0.75s;
+}
+
+.link:hover {
+    color: rgba(143, 96, 156, 1) !important;
+}

@@ -1,0 +1,15 @@
+<div style="margin-top: 6rem;" class="example-container example-is-mobile">
+    <mat-toolbar class="example-toolbar mat-elevation-z3 initial" fxLayout="row">
+        <div *ngFor="let rota of rotas" fxHide.xs>
+            <a [routerLink]="rota.url" routerLinkActive="active" class="ms-2 me-2 link">
+                {{ rota.text }}
+            </a>
+        </div>
+        <a mat-icon-button fxHide fxShow.xs>
+            <mat-icon>more_vert</mat-icon> 
+        </a>
+        <button mat-raised-button class="btn" fxHide.xs>
+            Entrar
+        </button>
+    </mat-toolbar>
+</div>
