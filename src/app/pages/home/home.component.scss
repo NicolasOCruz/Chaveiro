@@ -5,15 +5,21 @@
 }
 .anima{
     position: relative;
-    font-size: 2rem;
+    font-size: 2.3rem;
     background: white !important;
 }
+h4{
+    font-size: 1.2rem;
+    color: gray;
+}
+
 .texto {
-    font-size: 2rem;    
+    font-size: 2.3rem;    
     opacity: 0;
     animation: fader 10s infinite;
     position: absolute;
-    left: 15rem;
+    left: 18.1rem;
+    top: 3rem;
     color: blue;
 }
 

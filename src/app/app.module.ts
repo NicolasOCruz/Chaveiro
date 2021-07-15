@@ -17,6 +17,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { WidgetComponent } from './shared/widget/widget.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { PresentationComponent } from './pages/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MainNavComponent,
     HomeComponent,
     BackgroundComponent,
-    WidgetComponent
+    WidgetComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
