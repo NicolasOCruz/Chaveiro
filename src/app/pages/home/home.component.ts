@@ -1,5 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { MediaMatcher } from '@angular/cdk/layout'
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +7,11 @@ import { MediaMatcher } from '@angular/cdk/layout'
 })
 export class HomeComponent implements OnInit {
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
-    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addEventListener('change', this._mobileQueryListener)
+  constructor() {
    }
 
   ngOnInit(): void {
+    this.onScroll()
   }
 
   ngOnDestroy(): void{
@@ -24,28 +21,21 @@ export class HomeComponent implements OnInit {
   private _mobileQueryListener!: () => void;
   mobileQuery!: MediaQueryList;
 
-  images = [
-    {
-      path: "./../../../assets/img/frente.jpg"
-    },
-    {
-      path: "./../../../assets/img/servicos/chave.jpg"
-    },
-    {
-      path: "./../../../assets/img/danilo.jpg"
-    },
-    {
-      path: "./../../../assets/img/frente2.jpg"
-    },
-    {
-      path: "./../../../assets/img/servicos/portao.jpg"
-    },
-    {
-      path: "./../../../assets/img/servicos/porta.jpg"
-    }
-  ]
-
   number!: number;
 
+  public onScroll(){
+    const target = <HTMLElement[]><any> document.querySelectorAll('[data-anime]') ; ///document.querySelectorAll('[data-anime]');
+     const animationClass = 'animate';
+     const windowTop2 = window.pageYOffset + ((window.innerHeight * 3) / 8);
+
+     target.forEach((elementt) => {
+       if((windowTop2) > elementt.getBoundingClientRect().top){
+         elementt.classList.add(animationClass);
+       }
+       else{
+          elementt.classList.remove(animationClass);
+       }
+      })
+  }
 
 }

@@ -7,13 +7,13 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Averta-Regular" !important;
+    font-family: "Averta-Light" !important;
 }
 
 p,
 span {
     line-height: 1.5em;
-    font-family: 'Averta-Light';
+    font-family: "Averta-Light";
 }
 
 body {
@@ -21,8 +21,41 @@ body {
     background: rgba(244, 244, 242, 1) !important;
 }
 
+[data-anime] {
+    transition: transform 1.8s;
+}
+[data-anime="left"] {
+    transform: translate3d(-200px, 0, 0);
+}
+[data-anime="right"] {
+    transform: translate3d(200px, 0, 0);
+}
+[data-anime="top"] {
+    transform: translate3d(0, -60px, 0);
+}
+[data-anime="bottom"] {
+    transform: translate3d(0, 200px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 .btn-theme {
-    border-radius: 40px;
-    background-color: blue;
-    color: white;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    background-color: #ffff66;
+    color: black;
+    padding: 10px 45px;
+    font-size: 1.3rem;
+    transition: all 0.7s;
+    border: 1px solid gray;
+}
+
+.btn-theme:hover {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
 }
