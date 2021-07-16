@@ -37,7 +37,10 @@
 .link:hover {
     color: rgba(143, 96, 156, 1) !important;
 }
-
+.t{
+    display: flex;
+    text-align: center;
+}
 button{
     color: gray;
 }
