@@ -1,25 +1,26 @@
 <div class="container-fluid py-2 py-md-5 home">
-    <div class="container anima">
+    <div class="container-fluid anima">
         <div class="row py-5 mt-5 mt-md-0 mb-5 mb-md-0">
-            <div class="col-12 col-md-5">
-                <p>Nosso serviço é</p>
-                <p class="texto a">confiável</p>
-                <p class="texto b">ágil</p>
-                <p class="texto c">seguro</p>
-                <p class="texto d">eficiente</p>
-                <p class="texto e">econômico</p>
-                <h4 class="py-4">Conheça os nossos serviços. Faça login ou cadastre-se e solicite agora mesmo para você!</h4>
-                <h4 class="pb-4">É rápido. É fácil. É <span style="color: green;">ONLINE</span>!</h4>
-                <!--div class="col-12 text-center my-5">
-                    <button class="btn btn-theme">Solicitar um serviço</button>
-                </div-->
+            <div class="col-12 col-md-6 px-md-5">
+                <div class="px-5">
+                    <p>Nosso serviço é</p>
+                    <p class="texto a">confiável</p>
+                    <p class="texto b">ágil</p>
+                    <p class="texto c">seguro</p>
+                    <p class="texto d">eficiente</p>
+                    <p class="texto e">econômico</p>
+                    <p class="landing">Solicite agora mesmo!</p>
+                    <h4 class="py-4">Faça login ou cadastre-se para realizar a solicitação!<br> É rápido. É fácil. É <span
+                            style="color: green;">ONLINE</span>!</h4>
+                </div>
             </div>
-            <div class="col-12 col-md-7 pt-4 pt-md-0">
-                <carousel autoplay="true" autoplayInterval=2000  [cellsToShow]="mobileQuery.matches ? 1 : 1" loop="true" height=340 transitionDuration=600 style="z-index: 1 !important;">
+            <div class="col-12 col-md-6 pt-4 pt-md-0">
+                <!--carousel autoplay="true" autoplayInterval=2000 [cellsToShow]="mobileQuery.matches ? 1 : 1" loop="true"
+                    height=340 transitionDuration=600 style="z-index: 1 !important;">
                     <div class="carousel-cell" *ngFor="let image of images">
                         <img [src]="image.path">
                     </div>
-                </carousel>
+                </carousel-->
             </div>
         </div>
     </div>

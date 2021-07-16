@@ -1,0 +1,85 @@
+$font-path: '/assets/fonts/';
+
+@font-face {
+    font-family: 'Averta-Regular';
+    src: url($font-path+'Averta-Regular.eot');
+    src: url($font-path+'Averta-Regular.eot?#iefix') format('embedded-opentype'),
+         url($font-path+'Averta-Regular.svg#Averta-Regular') format('svg'),
+         url($font-path+'Averta-Regular.ttf') format('truetype'),
+         url($font-path+'Averta-Regular.woff') format('woff'),
+         url($font-path+'Averta-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:    'Averta-Black';
+    src:    url($font-path+'Averta-Black.eot');
+    src:    url($font-path+'Averta-Black.eot?#iefix') format('embedded-opentype'),
+            url($font-path+'Averta-Black.svg#Averta-Black') format('svg'),
+            url($font-path+'Averta-Black.ttf') format('truetype'),
+            url($font-path+'Averta-Black.woff') format('woff'),
+            url($font-path+'Averta-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta-Bold';
+    src:    url($font-path+'Averta-Bold.eot');
+    src:    url($font-path+'Averta-Bold.eot?#iefix') format('embedded-opentype'),
+            url($font-path+'Averta-Bold.svg#Averta-Bold') format('svg'),
+            url($font-path+'Averta-Bold.ttf') format('truetype'),
+            url($font-path+'Averta-Bold.woff') format('woff'),
+            url($font-path+'Averta-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta-ExtraBold';
+    src:    url($font-path+'Averta-ExtraBold.eot');
+    src:    url($font-path+'Averta-ExtraBold.eot?#iefix') format('embedded-opentype'),
+            url($font-path+'Averta-ExtraBold.svg#Averta-ExtraBold') format('svg'),
+            url($font-path+'Averta-ExtraBold.ttf') format('truetype'),
+            url($font-path+'Averta-ExtraBold.woff') format('woff'),
+            url($font-path+'Averta-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta-Light';
+    src: url($font-path+'Averta-Light.eot');
+    src: url($font-path+'Averta-Light.eot?#iefix') format('embedded-opentype'),
+         url($font-path+'Averta-Light.svg#Averta-Light') format('svg'),
+         url($font-path+'Averta-Light.ttf') format('truetype'),
+         url($font-path+'Averta-Light.woff') format('woff'),
+         url($font-path+'Averta-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta-Semibold';
+    src: url($font-path+'Averta-Semibold.eot');
+    src: url($font-path+'Averta-Semibold.eot?#iefix') format('embedded-opentype'),
+         url($font-path+'Averta-Semibold.svg#Averta-Semibold') format('svg'),
+         url($font-path+'Averta-Semibold.ttf') format('truetype'),
+         url($font-path+'Averta-Semibold.woff') format('woff'),
+         url($font-path+'Averta-Semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url($font-path+'MinionPro-Regular.eot');
+    src: url($font-path+'MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url($font-path+'MinionPro-Regular.svg#MinionPro-Regular') format('svg'),
+         url($font-path+'MinionPro-Regular.ttf') format('truetype'),
+         url($font-path+'MinionPro-Regular.woff') format('woff'),
+         url($font-path+'MinionPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}  
