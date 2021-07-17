@@ -1,0 +1,28 @@
+.whatsapp{
+    background-color: rgba(100, 165, 255, 1);
+    overflow: hidden;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+h1, p {
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+.btn-theme {
+    background-color: rgba(0, 110, 233, 1);
+    color: white;
+    border: 0;
+}
+
+.btn-theme:hover{
+    background-color: blue;
+}

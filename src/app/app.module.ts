@@ -18,6 +18,9 @@ import { WidgetComponent } from './shared/widget/widget.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { PresentationComponent } from './pages/presentation/presentation.component';
+import { ServicosComponent } from './pages/servicos/servicos.component';
+import { WhatsappComponent } from './pages/whatsapp/whatsapp.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
     HomeComponent,
     BackgroundComponent,
     WidgetComponent,
-    PresentationComponent
+    PresentationComponent,
+    ServicosComponent,
+    WhatsappComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
